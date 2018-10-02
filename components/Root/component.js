@@ -1,18 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native'
-import { NativeRouter, Switch, Route, BackButton } from 'react-router-native'
-import scenes from 'scenes'
-import * as routeKeys from './constants/routeKeys'
+import { View } from 'react-native'
+import { createStackNavigator } from 'react-navigation';
+import Routes from 'components/Routes'
+import styles from './styles'
+
 
 export default () => (
-    <NativeRouter>
-        <BackButton>
-            <View style={{ flex: 1, backgroundColor: 'red', paddingTop: 50}}>
-                <Switch>
-                    <Route path={routeKeys.ROOT} component={scenes.Posts} />
-                    <Route path={routeKeys.USER} component={scenes.User} />
-                </Switch>
-            </View>
-        </BackButton>
-    </NativeRouter>
+    <View style={styles.root}>
+        <Routes />
+    </View>
 )

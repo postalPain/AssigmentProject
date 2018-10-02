@@ -1,3 +1,6 @@
 export default {
-    users: []
+    data: {
+        items: [],
+        status: 'initial'
+    }
 }

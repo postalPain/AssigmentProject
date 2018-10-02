@@ -1,2 +1,2 @@
-export const ROOT = '/'
-export const USER = '/:user'
+export const USERS = '/'
+export const USER = '/user'
