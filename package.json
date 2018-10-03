@@ -10,7 +10,6 @@
     "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-*"
   },
   "dependencies": {
-    "babel-plugin-module-resolver": "^3.1.1",
     "expo": "^30.0.1",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
@@ -22,6 +21,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "redux-devtools-extension": "^2.13.5"
+    "redux-devtools-extension": "^2.13.5",
+    "babel-plugin-module-resolver": "^3.1.1"
   }
 }
